@@ -1,2 +1,2 @@
 # suvidha
-Internship project for uvidha foundation
+Internship project for Suvidha foundation
