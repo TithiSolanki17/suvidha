@@ -59,10 +59,6 @@ function Navbar({ className }: { className?: string }) {
              <HoveredLink href="/pages/gallery#photo6">Event6</HoveredLink>
            </div>
            </MenuItem>
-           </Link>
-           <Link href="/pages/about">
-           <MenuItem setActive={setActive} active={active} item="Testimonials"></MenuItem>
-           </Link>
            <Link href="/pages/about">
            <MenuItem setActive={setActive} active={active} item="Contact US">
              <div className="flex flex-col space-y-4 text-sm">
@@ -121,10 +117,9 @@ function Navbar({ className }: { className?: string }) {
           <div className='px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-yellow-300'>
               <a href="/" className='text-neutral-600 block hover:text-black rounded-lg p-2'>Home</a>
               <a href="/pages/about" className='text-neutral-600 block hover:text-black rounded-lg p-2'>About</a>
-              <a href="/pages/donor" className='text-neutral-600 block hover:text-black rounded-lg p-2'>Out Donors</a>
+              <a href="/pages/donors" className='text-neutral-600 block hover:text-black rounded-lg p-2'>Out Donors</a>
               <a href="/pages/gallery" className='text-neutral-600 block hover:text-black rounded-lg p-2'>Gallery</a>
               <a href="/pages/events" className='text-neutral-600 block hover:text-black rounded-lg p-2'>Events</a>
-              <a href="/pages/testimonials" className='text-neutral-600 block hover:text-black rounded-lg p-2'>Testimonials</a>
               <a href="/pages/contact" className='text-neutral-600 block hover:text-black rounded-lg p-2'>Contact US</a>
           </div>
         </div>
