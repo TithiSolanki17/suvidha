@@ -29,7 +29,7 @@ function Navbar({ className }: { className?: string }) {
            </div>
            </MenuItem>
            </Link>
-           <Link href="/pages/donor">
+           <Link href="/pages/donors">
            <MenuItem setActive={setActive} active={active} item="Our Donors">
            <div className="flex flex-col space-y-4 text-sm">
              <HoveredLink href="/pages/donor">"Every contribution brings us closer to our goals"</HoveredLink>
@@ -48,7 +48,6 @@ function Navbar({ className }: { className?: string }) {
            </div>
            </MenuItem>
            </Link>
-           <Link href="/pages/about">
            <MenuItem setActive={setActive} active={active} item="Events">
            <div className="flex flex-col space-y-4 text-sm">
              <HoveredLink href="/pages/gallery#photo1">Event1</HoveredLink>
