@@ -1,9 +1,9 @@
 import Image from 'next/image';
 import React from 'react';
 import '../styles/styles.css';
-import bgimg1 from '../assets/landscape-1.png';
-import bgimg2 from '../assets/landscape-2.png';
-import bgimg3 from '../assets/landscape-3.png';
+import bgimg1 from '../gallery/assets/landscape-1.png';
+import bgimg2 from '../gallery/assets/landscape-2.png';
+import bgimg3 from '../gallery/assets/landscape-3.png';
 
 export default function page(){
   return (

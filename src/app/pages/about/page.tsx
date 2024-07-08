@@ -13,9 +13,10 @@ export default function Home() {
         </div>
       <Slogan/>
       <BentoGridDemo/>
-     
-  <T_Slogan/>
-      < MarqueeDemo/>
+      <T_Slogan/>
+      <div id='testimonials'>
+        < MarqueeDemo/>
+      </div>
       </main>
     );
   }

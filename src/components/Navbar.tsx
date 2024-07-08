@@ -24,12 +24,20 @@ function Navbar({ className }: { className?: string }) {
            <Link href="/pages/about">
            <MenuItem setActive={setActive} active={active} item="About us">
            <div className="flex flex-col space-y-4 text-sm">
+<<<<<<< HEAD
+             <HoveredLink href="/pages/about#mission">Mission</HoveredLink>
+             <HoveredLink href="/pages/about#vision">Vision</HoveredLink>
+             <HoveredLink href="/pages/about#testimonials">Testimonials</HoveredLink>
+=======
              <HoveredLink href="/pages/about/mission">Mission</HoveredLink>
              <HoveredLink href="/pages/gallery#photo6">Vision</HoveredLink>
+             <HoveredLink href="/pages/gallery#photo6">Testimonials</HoveredLink>
+             
+>>>>>>> cd6c0e8acd609fdd8f155c449312a448bee0d2a6
            </div>
            </MenuItem>
            </Link>
-           <Link href="/pages/donor">
+           <Link href="/pages/donors">
            <MenuItem setActive={setActive} active={active} item="Our Donors">
            <div className="flex flex-col space-y-4 text-sm">
              <HoveredLink href="/pages/donor">"Every contribution brings us closer to our goals"</HoveredLink>
@@ -48,7 +56,6 @@ function Navbar({ className }: { className?: string }) {
            </div>
            </MenuItem>
            </Link>
-           <Link href="/pages/about">
            <MenuItem setActive={setActive} active={active} item="Events">
            <div className="flex flex-col space-y-4 text-sm">
              <HoveredLink href="/pages/gallery#photo1">Event1</HoveredLink>
@@ -59,10 +66,6 @@ function Navbar({ className }: { className?: string }) {
              <HoveredLink href="/pages/gallery#photo6">Event6</HoveredLink>
            </div>
            </MenuItem>
-           </Link>
-           <Link href="/pages/about">
-           <MenuItem setActive={setActive} active={active} item="Testimonials"></MenuItem>
-           </Link>
            <Link href="/pages/about">
            <MenuItem setActive={setActive} active={active} item="Contact US">
              <div className="flex flex-col space-y-4 text-sm">
@@ -124,7 +127,6 @@ function Navbar({ className }: { className?: string }) {
               <a href="/pages/donors" className='text-neutral-600 block hover:text-black rounded-lg p-2'>Out Donors</a>
               <a href="/pages/gallery" className='text-neutral-600 block hover:text-black rounded-lg p-2'>Gallery</a>
               <a href="/pages/events" className='text-neutral-600 block hover:text-black rounded-lg p-2'>Events</a>
-              <a href="/pages/testimonials" className='text-neutral-600 block hover:text-black rounded-lg p-2'>Testimonials</a>
               <a href="/pages/contact" className='text-neutral-600 block hover:text-black rounded-lg p-2'>Contact US</a>
           </div>
         </div>
