@@ -1,6 +1,7 @@
 "use client";
 import React from "react";
 import { AnimatedTooltip } from "./ui/animated-tooltip";
+import instagramImage from './instagram_logo.png';
 const people = [
   {
     id: 1,
