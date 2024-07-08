@@ -30,6 +30,7 @@ interface MarqueeProps {
         },
         className,
       )}
+      id = 'testimonials'
     >
       {Array(repeat)
         .fill(0)
