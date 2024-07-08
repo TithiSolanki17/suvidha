@@ -65,6 +65,7 @@ export const AnimatedTooltip = ({
                   translateX: translateX,
                   rotate: rotate,
                   whiteSpace: "nowrap",
+                  margin: "10px"
                 }}
                 className="absolute -top-16 -left-1/2 translate-x-1/2 flex text-xs  flex-col items-center justify-center rounded-md bg-black z-50 shadow-xl px-4 py-2"
               >
