@@ -3,6 +3,7 @@ import React from 'react';
 import Slogan from '../../../components/slogan';
 import BentoGridDemo from '../../../components/bento';
 import  MarqueeDemo from '../../../components/testimonials';
+import T_Slogan from '../../../components/testimonial_head';
 // 
 export default function Home() {
     return(
@@ -12,6 +13,8 @@ export default function Home() {
         </div>
       <Slogan/>
       <BentoGridDemo/>
+     
+  <T_Slogan/>
       < MarqueeDemo/>
       </main>
     );
