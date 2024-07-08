@@ -9,6 +9,7 @@ interface MarqueeProps {
   repeat?: number;
   [key: string]: any;
 }
+
  function Marquee({
   className,
   reverse,
@@ -48,5 +49,4 @@ interface MarqueeProps {
     </div>
   );
 }
-
 export default Marquee;

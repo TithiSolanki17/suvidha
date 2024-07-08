@@ -1,6 +1,6 @@
 import { cn } from "@/utils/cn";
-import Marquee from "./ui/marquee";
- 
+import Marquee from "@/components/ui/marquee";
+
 const reviews = [
   {
     name: "Jack",
@@ -39,10 +39,10 @@ const reviews = [
     img: "https://avatar.vercel.sh/james",
   },
 ];
- 
+
 const firstRow = reviews.slice(0, reviews.length / 2);
 const secondRow = reviews.slice(reviews.length / 2);
- 
+
 const ReviewCard = ({
   img,
   name,
@@ -55,28 +55,28 @@ const ReviewCard = ({
   body: string;
 }) => {
   return (
-    <figure
-      className={cn(
-        "relative w-64 cursor-pointer overflow-hidden rounded-xl border p-4",
-        // light styles
-        "border-gray-950/[.1] bg-gray-950/[.01] hover:bg-gray-950/[.05]",
-       
-      )}
-    >
-      <div className="flex flex-row items-center gap-2">
-        <img className="rounded-full" width="32" height="32" alt="" src={img} />
-        <div className="flex flex-col">
-          <figcaption className="text-sm font-medium ">
-            {name}
-          </figcaption>
-          <p className="text-xs font-medium ">{username}</p>
-        </div>
-      </div>
-      <blockquote className="mt-2 text-sm">{body}</blockquote>
-    </figure>
+   <figure
+  className={cn(
+    "relative w-64 cursor-pointer overflow-hidden rounded-xl border p-4",
+    // light styles
+    "border-gray-950/[.1] bg-gray-950/[.01] hover:bg-gray-950/[.05]"
+  )}
+>
+  <div className="flex flex-row items-center gap-2">
+    <img className="rounded-full" width="32" height="32" alt="" src={img} />
+    <div className="flex flex-col">
+      <figcaption className="text-sm font-medium">
+        {name}
+      </figcaption>
+      <p className="text-xs font-medium text-gray-950/40">{username}</p>
+    </div>
+  </div>
+  <blockquote className="mt-2 text-sm">{body}</blockquote>
+</figure>
+
   );
 };
- 
+
 const MarqueeDemo = () => {
   return (
     <div className="relative flex h-full w-full flex-col items-center justify-center overflow-hidden rounded-lg border bg-background py-20 md:shadow-xl">
@@ -95,5 +95,5 @@ const MarqueeDemo = () => {
     </div>
   );
 };
- 
+
 export default MarqueeDemo;
