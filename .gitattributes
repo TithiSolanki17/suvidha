@@ -1,0 +1,20 @@
+# Set default behavior to automatically normalize line endings
+* text=auto
+
+# Ensure shell scripts have LF line endings
+*.sh text eol=lf
+
+# Treat image files as binary
+*.png binary
+*.jpg binary
+*.gif binary
+
+# Custom diff settings for markdown files
+*.md diff=markdown
+
+# Use Git LFS for large media files
+*.psd filter=lfs diff=lfs merge=lfs -text
+*.zip filter=lfs diff=lfs merge=lfs -text
+
+# Ensure JSON files are treated as text
+*.json text
