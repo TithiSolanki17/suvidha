@@ -55,31 +55,30 @@ const ReviewCard = ({
   body: string;
 }) => {
   return (
-   <figure
-  className={cn(
-    "relative w-64 cursor-pointer overflow-hidden rounded-xl border p-4",
-    // light styles
-    "border-gray-950/[.1] bg-gray-950/[.01] hover:bg-gray-950/[.05]"
-  )}
->
-  <div className="flex flex-row items-center gap-2">
-    <img className="rounded-full" width="32" height="32" alt="" src={img} />
-    <div className="flex flex-col">
-      <figcaption className="text-sm font-medium">
-        {name}
-      </figcaption>
-      <p className="text-xs font-medium text-gray-950/40">{username}</p>
-    </div>
-  </div>
-  <blockquote className="mt-2 text-sm">{body}</blockquote>
-</figure>
-
+    <figure
+      className={cn(
+        "relative w-64 cursor-pointer overflow-hidden rounded-xl border-2 p-4",
+        // light styles
+        "border-gray-700 bg-gray-950/[.01] hover:bg-gray-950/[.05]"
+      )}
+    >
+      <div className="flex flex-row items-center gap-2">
+        <img className="rounded-full" width="32" height="32" alt="" src={img} />
+        <div className="flex flex-col">
+          <figcaption className="text-sm font-medium text-black">
+            {name}
+          </figcaption>
+          <p className="text-xs font-medium text-black">{username}</p>
+        </div>
+      </div>
+      <blockquote className="mt-2 text-sm text-black">{body}</blockquote>
+    </figure>
   );
 };
 
 const MarqueeDemo = () => {
   return (
-    <div className="relative flex h-full w-full flex-col items-center justify-center overflow-hidden rounded-lg border bg-background py-20 md:shadow-xl">
+    <div className="relative flex h-full w-full flex-col items-center justify-center overflow-hidden rounded-lg border bg-background py-10 md:shadow-xl">
       <Marquee pauseOnHover className="[--duration:20s]">
         {firstRow.map((review) => (
           <ReviewCard key={review.username} {...review} />
