@@ -26,7 +26,7 @@ function Navbar({ className }: { className?: string }) {
            <div className="flex flex-col space-y-4 text-sm">
              <HoveredLink href="/pages/about/mission">Mission</HoveredLink>
              <HoveredLink href="/pages/gallery#photo6">Vision</HoveredLink>
-             <HoveredLink href="/pages/gallery#photo6">Testimonial</HoveredLink>
+             <HoveredLink href="/pages/gallery#photo6">Testimonials</HoveredLink>
              
            </div>
            </MenuItem>
