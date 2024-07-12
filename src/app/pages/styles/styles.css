@@ -29,6 +29,7 @@ Image {
   /* padding-block: 5rem; */
   /* margin: 2rem; */
   margin: auto;
+  padding-top: 16px;
 }
 
 .card__container {

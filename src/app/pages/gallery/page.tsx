@@ -4,15 +4,21 @@ import '../styles/styles.css';
 import bgimg1 from '../gallery/assets/landscape-1.png';
 import bgimg2 from '../gallery/assets/landscape-2.png';
 import bgimg3 from '../gallery/assets/landscape-3.png';
+import ImagesSliderDemoGallery from '@/components/imagegallery';
 
 export default function page(){
   return (
     <div>
+      <div className='h-full w-full pt-11'>
+      <ImagesSliderDemoGallery/>
+        </div>
+        
       <div className='flex justify-center mt-20 mb-6 sticky top-0 text-center text-4xl'>
         <b>Gallery</b>
       </div>
 
-      <div className="container my-0">
+
+      <div className="container">
         <div className="card__container">
           <article className="card__article" id="photo1">
             <Image

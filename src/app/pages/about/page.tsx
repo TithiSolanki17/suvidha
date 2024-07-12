@@ -1,4 +1,4 @@
-import ImagesSliderDemo from '../../../components/image';
+import ImagesSliderDemoAbout from '../../../components/image';
 import React from 'react';
 import Slogan from '../../../components/slogan';
 import BentoGridDemo from '../../../components/bento';
@@ -9,7 +9,7 @@ export default function Home() {
     return(
       <main className="flex min-h-screen flex-col items-center justify-between bg-white">
         <div className='h-full w-full pt-11'>
-      <ImagesSliderDemo/>
+      <ImagesSliderDemoAbout/>
         </div>
       <Slogan/>
       <BentoGridDemo/>
