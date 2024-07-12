@@ -20,11 +20,11 @@ export default function page() {
   }, [page, users]);
 
   return (
-    <>
-    <div className='flex justify-center my-20 sticky top-0'>
-      Our Donors
+    <div className='m-10'>
+    <div className='flex justify-center my-20 sticky top-0 text-center text-4xl'>
+      <b>Our Donors</b>
     </div>
-     <div className='container mx-auto border border-division border-black my-10 md:my-35'>
+     <div className='container mx-auto border border-division border-black my-10 md:my-35 z-10'>
      <div className="text-sm text-gray-600 flex justify-center border border-black ">
         Showing {items.length} of {users.length} results ({page} of {pages} pages)
       </div>
@@ -62,7 +62,7 @@ export default function page() {
       </TableHeader>
       <TableBody items={items}>
         {(item) => (
-          <TableRow key={item.name} className="bg-neutral-400 pointer-events-none overflow-scroll justify-end">
+          <TableRow key={item.name} className="pointer-events-none overflow-scroll justify-end">
             <TableCell className='text-center'>{item.name}</TableCell>
             <TableCell className='text-center'>{item.amount}</TableCell>
           </TableRow>
@@ -73,7 +73,7 @@ export default function page() {
      <div>
       hello
      </div>
-      </>
+      </div>
   );
 };
   

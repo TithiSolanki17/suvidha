@@ -8,8 +8,11 @@ import bgimg3 from '../gallery/assets/landscape-3.png';
 export default function page(){
   return (
     <div>
-      Gallery
-      <div className="container">
+      <div className='flex justify-center mt-20 mb-6 sticky top-0 text-center text-4xl'>
+        <b>Gallery</b>
+      </div>
+
+      <div className="container my-0">
         <div className="card__container">
           <article className="card__article" id="photo1">
             <Image
