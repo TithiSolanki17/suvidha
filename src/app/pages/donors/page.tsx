@@ -21,7 +21,7 @@ export default function page() {
 
   return (
     <div className='m-10'>
-    <div className='flex justify-center my-20 sticky top-0 text-center text-4xl'>
+    <div className='flex justify-center my-20 sticky top-0 text-center text-4xl z-10 bg-blue-200 border rounded-lg'>
       <b>Our Donors</b>
     </div>
      <div className='container mx-auto border border-division border-black my-10 md:my-35 z-10'>

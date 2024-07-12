@@ -12,7 +12,7 @@ export default function page(){
       <div className='h-full w-full pt-11'>
       <ImagesSliderDemoGallery/>
         </div>
-        
+
       <div className='flex justify-center mt-20 mb-6 sticky top-0 text-center text-4xl'>
         <b>Gallery</b>
       </div>
