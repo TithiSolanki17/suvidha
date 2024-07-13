@@ -9,17 +9,17 @@ import ImagesSliderDemoGallery from '@/components/imagegallery';
 export default function page(){
   return (
     <div>
-      <div className='h-full w-full pt-11'>
+      <div className='h-full w-full py-11'>
       <ImagesSliderDemoGallery/>
         </div>
 
-      <div className='flex justify-center mt-20 mb-6 sticky top-0 text-center text-4xl'>
+      {/* <div className='flex justify-center mt-20 mb-6 sticky top-0 text-center text-4xl'>
         <b>Gallery</b>
-      </div>
+      </div> */}
 
 
       <div className="container">
-        <div className="card__container">
+        <div className="card__container pb-10">
           <article className="card__article" id="photo1">
             <Image
               src={bgimg1}
