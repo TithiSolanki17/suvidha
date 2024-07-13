@@ -21,8 +21,8 @@ export default function RootLayout({
       <body className={inter.className}>
       <Logo />
         <Navbar/>
-        <div className="z-50 md:relative">
       <AnimatedTooltipPreview/>
+        <div className="z-50 md:relative">
         </div>
         {children}
       </body>
