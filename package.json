@@ -11,13 +11,19 @@
   "dependencies": {
     "@nextui-org/react": "^2.4.2",
     "@tabler/icons-react": "^3.7.0",
+    "@types/styled-components": "^5.1.34",
     "clsx": "^2.1.1",
     "framer-motion": "^11.3.2",
     "next": "14.2.4",
     "next-js": "^0.9.0-alpha",
     "react": "^18",
     "react-dom": "^18",
+<<<<<<< HEAD
     "tailwind-merge": "^2.4.0",
+=======
+    "styled-components": "^6.1.11",
+    "tailwind-merge": "^2.3.0",
+>>>>>>> ba2a9a05318983f50651db7f035f4baf23d727fb
     "yarn": "^1.22.22"
   },
   "devDependencies": {
