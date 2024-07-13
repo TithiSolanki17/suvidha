@@ -18,12 +18,8 @@
     "next-js": "^0.9.0-alpha",
     "react": "^18",
     "react-dom": "^18",
-<<<<<<< HEAD
-    "tailwind-merge": "^2.4.0",
-=======
     "styled-components": "^6.1.11",
     "tailwind-merge": "^2.3.0",
->>>>>>> ba2a9a05318983f50651db7f035f4baf23d727fb
     "yarn": "^1.22.22"
   },
   "devDependencies": {
