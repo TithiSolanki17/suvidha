@@ -49,6 +49,7 @@ function Navbar({ className }: { className?: string }) {
            </div>
            </MenuItem>
            </Link>
+           <Link href="/pages/events">
            <MenuItem setActive={setActive} active={active} item="Events">
            <div className="flex flex-col space-y-4 text-sm">
              <HoveredLink href="/pages/gallery#photo1">Event1</HoveredLink>
@@ -59,7 +60,8 @@ function Navbar({ className }: { className?: string }) {
              <HoveredLink href="/pages/gallery#photo6">Event6</HoveredLink>
            </div>
            </MenuItem>
-           <Link href="/pages/about">
+           </Link>
+           <Link href="/pages/contact">
            <MenuItem setActive={setActive} active={active} item="Contact US">
              <div className="flex flex-col space-y-4 text-sm">
                  <HoveredLink href="">Email</HoveredLink>
@@ -120,7 +122,7 @@ function Navbar({ className }: { className?: string }) {
               <a href="/pages/donors" className='text-neutral-600 block hover:text-black rounded-lg p-2'>Our Donors</a>
               <a href="/pages/gallery" className='text-neutral-600 block hover:text-black rounded-lg p-2'>Gallery</a>
               <a href="/pages/events" className='text-neutral-600 block hover:text-black rounded-lg p-2'>Events</a>
-              <a href="/pages/contact" className='text-neutral-600 block hover:text-black rounded-lg p-2'>Contact US</a>
+              <a href="/pages/contact" className='text-neutral-600 block hover:text-black rounded-lg p-2'>Contact Us</a>
           </div>
         </div>
       )}
