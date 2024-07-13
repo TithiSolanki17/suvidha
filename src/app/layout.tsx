@@ -19,7 +19,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         <Navbar/>
-        <div>
+        <div className="z-50 md:relative">
       <AnimatedTooltipPreview/>
         </div>
         {children}
