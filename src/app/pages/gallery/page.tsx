@@ -9,8 +9,8 @@ import ImagesSliderDemoGallery from '@/components/imagegallery';
 export default function page(){
   return (
     <div className='pb-40'>
-      <div className='h-full w-full py-11'>
       <ImagesSliderDemoGallery/>
+      <div className='h-full w-full py-11'>
         </div>
 
       {/* <div className='flex justify-center mt-20 mb-6 sticky top-0 text-center text-4xl'>

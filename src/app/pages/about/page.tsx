@@ -1,5 +1,5 @@
 import React from 'react';
-import Footer from '../../../components/CustomFooter';
+// import Footer from '../../../components/CustomFooter';
 import ImagesSliderDemoAbout from '../../../components/image';
 import Slogan from '../../../components/slogan';
 import BentoGridDemo from '../../../components/bento';
@@ -13,10 +13,10 @@ export default function Home() {
   const words = ["Testimonials", "People"];
 
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between bg-white">
-      <div className='h-full w-full pt-11'>
+    <main >
         <ImagesSliderDemoAbout />
-      </div>
+      {/* <div className='h-full w-full pt-11 '>
+      </div> */}
       <Slogan />
       <BentoGridDemo />
       <div id='vision'>

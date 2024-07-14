@@ -5,7 +5,7 @@ import React from "react";
 import { Table, TableHeader, TableColumn, TableBody, TableRow, TableCell } from "@nextui-org/react";
 import {Pagination, PaginationItem, PaginationCursor} from "@nextui-org/pagination";
 import { users } from "../donors/data/data";
-import ImagesSliderDemoAbout from "../../../components/image";
+import ImagesSliderDemoAbout from "../../../components/imagedonor";
 
 export default function page() {
   const [page, setPage] = React.useState(1);
@@ -21,8 +21,9 @@ export default function page() {
   }, [page, users]);
 
   return (
-    <div className='m-10'>
+    <main>
       <ImagesSliderDemoAbout/>
+    <div className='m-10'>
     <div className='flex justify-center my-20 sticky top-0 text-center text-4xl z-10 bg-blue-200 border rounded-lg'>
       <b>Our Donors</b>
     </div>
@@ -72,10 +73,9 @@ export default function page() {
       </TableBody>
     </Table>
      </div>
-     <div>
-      hello
-     </div>
+  
       </div>
+      </main>
   );
 };
   
