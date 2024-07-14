@@ -63,9 +63,9 @@ const HomeGallery: React.FC = () => {
   };
 
   return (
-    <div className='pt-7'>
-      <b className='flex justify-start w-full bg-slate-700 text-yellow-300 text-4xl pt-14 px-20 pb-5 rounded-md'>Testimonials</b>
-      <div className="relative hidden md:flex w-full justify-center items-center md:px-60 rounded-md bg-slate-100 text-white p-7">
+    <div className='p-7 pt-24'>
+      <b className='flex justify-start w-auto bg-slate-700 text-yellow-300 text-4xl pt-5 px-4 md:pt-14 md:px-20 pb-5 rounded-md'>Testimonials</b>
+      <div className="relative hidden w-auto md:flex mx-4 justify-center items-center md:px-60 rounded-md bg-slate-200 text-white p-7">
         <button
           onClick={handlePrev}
           className="absolute left-4 bg-slate-900 text-white p-2 rounded-full shadow-lg z-10"
@@ -83,7 +83,7 @@ const HomeGallery: React.FC = () => {
         </button>
       </div>
 
-      <div className="md:hidden relative w-screen justify-center grid items-center bg-slate-700 p-10 rounded-md text-white">
+      <div className="md:hidden relative w-auto justify-center grid items-center bg-slate-200 p-10 rounded-md text-white">
         <button
           onClick={handlePrev}
           className="absolute left-4 bg-slate-900 text-white p-2 rounded-full shadow-lg z-10"
