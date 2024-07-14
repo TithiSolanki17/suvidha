@@ -1,9 +1,10 @@
 import React from "react";
 import NumberTickerDemo from "@/components/ui/home_ui/numberticker";
 import { StickyScrollRevealDemo } from "@/components/home_components/about";
-import {ShowButtonevents} from "@/components/home_components/buttons";
+import {ShowButtonevents} from "@/components/home_components/buttonsgallery";
 import ImagesSliderDemoAbout from "@/components/imagehome";
 import HomeGallery from "@/components/home_components/homegallery";
+import {LayoutGridDemo} from "@/components/home_components/gallery";
 
 export default function Home() {
   return (
@@ -11,14 +12,19 @@ export default function Home() {
       <div className="top-1">
      <ImagesSliderDemoAbout />
       </div>
-   <div className="flex min-h-screen flex-col items-center justify-between p-24 bg-white" style={{ color: 'black' }}>
+   <div >
      <NumberTickerDemo value={90}/>
+    <div>
+    <LayoutGridDemo/>
+    <ShowButtonevents/>
+    </div>
+     <div>
      <StickyScrollRevealDemo/>
      <ShowButtonevents/>
-     {/* <div className="flex justify-start p-7"> */}
      <HomeGallery/>
-     {/* </div> */}
+     </div>
    </div>
+
     </main>
   );
 }
