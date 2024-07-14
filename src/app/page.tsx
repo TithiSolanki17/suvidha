@@ -5,6 +5,7 @@ import NumberTickerDemo from "@/components/ui/home_ui/numberticker";
 =======
 import React from "react";
 import NumberTickerDemo from "@/components/ui/home_ui/numberticker";
+import { StickyScrollRevealDemo } from "@/components/home_components/about";
 
 
 >>>>>>> be01a16352bce260520ed1ce2d5c83c8c6c05c79
