@@ -1,3 +1,4 @@
+"use client";
 import NumberTicker from "@/components/ui/home_ui/numberticker";
 
 const NumberTickerDemo = () => {

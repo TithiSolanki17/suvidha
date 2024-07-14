@@ -21,12 +21,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        {/* <div> */}
           <Logo />
           <Navbar/>
           <AnimatedTooltipPreview/>
-          {children}
-        {/* </div> */}
+              {children}
         <CustomFooter/>
       </body>
     </html>

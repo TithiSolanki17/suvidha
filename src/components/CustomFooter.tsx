@@ -1,7 +1,17 @@
 'use client';
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 
 const CustomFooter = () => {
+  const [isClient, setIsClient] = useState(false);
+
+  useEffect(() => {
+    setIsClient(true);
+  }, []);
+
+  if (!isClient) {
+    return null;
+  }
+
   return (
     <div style={{ backgroundColor: 'black', color: '#fefefe', position: 'static', width: '100%', bottom: 0, left: 0 }}>
       <div style={{ color: '#f5ee22', maxWidth: '1010px', width: '90%', textTransform: 'uppercase', margin: '0 auto', marginBottom: '3rem', fontFamily: 'Gill Sans, "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif' }}>
@@ -20,22 +30,22 @@ const CustomFooter = () => {
           <a href="#">Home</a>
           <a href="#">About</a>
           <a href="#">Blogs</a>
-          <a href="#">Contact</a>
+          <a href="#">Contact</a>   
         </div>
         <div>
           <h4 className="address">Address</h4>
           <p>
-            <h5>Nagpur headquater: </h5>
+            <strong>Nagpur Headquarter:</strong><br />
             Suvidha Foundation, Walni Ward No. 1, Jai Bhole Nagar, Walni, Saoner Nagpur, Maharashtra 441102
           </p>
           <p>
-            <h5>Hyderabad Headquater: </h5>
+            <strong>Hyderabad Headquarter:</strong><br />
             Vazhra Nirman Pushpak, C Block 701, 500090, Hyderabad
           </p>
           <h4 className="mobile">Mobile</h4>
-          <p><a href="#">+91 7020044091</a></p>
+          <p><a href="tel:+917020044091">+91 7020044091</a></p>
           <h4 className="mail">Email</h4>
-          <p><a href="#">info@suvidhafoundationedutech.org</a></p>
+          <p><a href="mailto:info@suvidhafoundationedutech.org">info@suvidhafoundationedutech.org</a></p>
         </div>
       </div>
       <footer>
