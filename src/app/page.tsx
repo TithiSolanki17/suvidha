@@ -15,10 +15,9 @@ export default function Home() {
      <NumberTickerDemo value={90}/>
      <StickyScrollRevealDemo/>
      <ShowButtonevents/>
-     <div>
-      Gallery:
+     {/* <div className="flex justify-start p-7"> */}
      <HomeGallery/>
-     </div>
+     {/* </div> */}
    </div>
     </main>
   );
