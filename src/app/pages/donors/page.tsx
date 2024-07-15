@@ -25,7 +25,7 @@ export default function page() {
     <main>
       <ImagesSliderDemoAbout/>
     <div className='m-10'>
-    <div className='py-11 px-4'><FadeTextDemo/></div>
+    <div className='m-0 py-11 px-4'><FadeTextDemo/></div>
     <div className='flex justify-center my-20 sticky top-0 text-center text-4xl z-10 bg-blue-200 border rounded-lg'>
       <b>Our Donors</b>
     </div>
