@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import { HoveredLink, Menu, MenuItem, ProductItem } from "./ui/navbar-menu";
 import Link from "next/link";
 import { cn } from "../utils/cn";
+import { TransitionLink } from "@/utils/TransitionLink";
 
 function Navbar({ className }: { className?: string }) {
     const [active, setActive] = useState<string | null>(null);
@@ -22,10 +23,10 @@ function Navbar({ className }: { className?: string }) {
            </MenuItem>
            </Link>
            <Link href="/pages/about">
-           <MenuItem setActive={setActive} active={active} item="About us">
-           <div className="flex flex-col space-y-4 text-sm">
-             <HoveredLink href="/pages/about#vision">Vision</HoveredLink>
+            <MenuItem setActive={setActive} active={active} item="About us">
+            <div className="flex flex-col space-y-4 text-sm">
              <HoveredLink href="/pages/about#mission">Mission</HoveredLink>
+             <HoveredLink href="/pages/about#vision">Vision</HoveredLink>
              <HoveredLink href="/pages/about#testimonials">Testimonials</HoveredLink>
            </div>
            </MenuItem>

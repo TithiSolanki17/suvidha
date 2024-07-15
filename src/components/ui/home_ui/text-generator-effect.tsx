@@ -17,7 +17,7 @@ export const TextGenerateEffect = ({
     animate(
       "span",
       { opacity: 1 },
-      { duration: 1, delay: stagger(0.2) }
+      { duration: 1, delay: stagger(0.1) }
     );
   }, [animate]);
 
