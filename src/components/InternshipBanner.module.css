@@ -37,9 +37,21 @@
   font-size: 1em;
   cursor: pointer;
   border-radius: 5px;
+  animation: bounce 1s infinite;
 }
 
 .button:hover {
   background-color: #E0B213;
   color:black
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(-25%);
+    animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+  }
+  50% {
+    transform: translateY(0);
+    animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+  }
 }

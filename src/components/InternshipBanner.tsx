@@ -3,6 +3,7 @@
 import React from 'react';
 import styles from './InternshipBanner.module.css';
 import { ShinyButtonDemo } from './home_components/internbutton';
+import ShinyButton from './ui/home_ui/shiny-button';
 
 const InternshipBanner: React.FC = () => {
   return (
@@ -15,8 +16,9 @@ const InternshipBanner: React.FC = () => {
         <p className={styles.paragraph}>
           The Suvidha Foundation Internship Program is a unique opportunity for students and recent graduates to gain experience and contribute to the work of Suvidha Foundation. Along with undertaking tasks related to their specific skills, we encourage interns to develop a reputable professional portfolio.
         </p>
-        <button className={styles.button}>Apply Here</button>
-        {/* <ShinyButtonDemo/> */}
+        <button className={styles.button} >Apply Here →</button>
+        {/* <ShinyButton text='Apply Here'/>
+        <ShinyButtonDemo/> */}
       </div>
     </div>
   );

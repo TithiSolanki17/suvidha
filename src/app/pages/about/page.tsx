@@ -8,6 +8,7 @@ import T_Slogan from '../../../components/testimonial_head';
 import V_Slogan from '@/components/vision';
 import M_Slogan from '@/components/mission';
 import { FlipWords } from '@/components/ui/flip-words';
+import { FadeTextDemo } from '@/components/textabout';
 
 export default function Home() {
   const words = ["Testimonials", "People"];
@@ -17,7 +18,7 @@ export default function Home() {
         <ImagesSliderDemoAbout />
       {/* <div className='h-full w-full pt-11 '>
       </div> */}
-      <Slogan />
+      <div className='pt-11 px-4 pb-16'><FadeTextDemo/></div>
       <BentoGridDemo />
       <div id='vision'>
         <V_Slogan />

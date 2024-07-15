@@ -6,6 +6,7 @@ import { Table, TableHeader, TableColumn, TableBody, TableRow, TableCell } from 
 import {Pagination, PaginationItem, PaginationCursor} from "@nextui-org/pagination";
 import { users } from "../donors/data/data";
 import ImagesSliderDemoAbout from "../../../components/imagedonor";
+import { FadeTextDemo } from "@/components/textdonor";
 
 export default function page() {
   const [page, setPage] = React.useState(1);
@@ -24,6 +25,7 @@ export default function page() {
     <main>
       <ImagesSliderDemoAbout/>
     <div className='m-10'>
+    <div className='py-11 px-4'><FadeTextDemo/></div>
     <div className='flex justify-center my-20 sticky top-0 text-center text-4xl z-10 bg-blue-200 border rounded-lg'>
       <b>Our Donors</b>
     </div>
