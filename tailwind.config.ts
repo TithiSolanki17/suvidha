@@ -31,6 +31,7 @@ const config: Config = {
         marquee: "marquee var(--duration) linear infinite",
         "marquee-vertical": "marquee-vertical var(--duration) linear infinite",
         shimmer: "shimmer 2s linear infinite",
+        fadeIn: "fadeIn 1s ease-in-out",
       },
       keyframes: {
         marquee: {
@@ -49,6 +50,10 @@ const config: Config = {
             backgroundPosition: "-200% 0",
           },
         },
+        fadeIn: {
+          '0%': { opacity: '0' },
+          '100%': { opacity: '1' },
+        },
       },
     },
   },
@@ -58,4 +63,5 @@ const config: Config = {
 };
 
 export default config;
+
 

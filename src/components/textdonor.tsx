@@ -1,3 +1,4 @@
+'use client';
 import { FadeText } from "../components/ui/FadeText";
 
 export async function FadeTextDemo() {
