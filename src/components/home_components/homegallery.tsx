@@ -3,17 +3,23 @@
 'use client';
 import React, { useState } from 'react';
 import { useSpring, animated } from '@react-spring/web';
-import Image from 'next/image';
+import Image, { StaticImageData } from 'next/image';
 import { ButtonsCard } from '../ui/home_ui/tailwindcss-buttons';
 import { ShowButtonevents } from './buttons';
+import t1 from '../../images_pndformat/test1.jpg';
+import t2 from '../../images_pndformat/test2.jpg';
+import t3 from '../../images_pndformat/test3.jpg';
+import t4 from '../../images_pndformat/test4.jpg';
+import t5 from '../../images_pndformat/test5.jpg';
+import t6 from '../../images_pndformat/test6.jpg';
 
-const images: string[] = [
-    "https://images.unsplash.com/photo-1720766595377-b413ce3a6478?q=80&w=1886&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    "https://images.unsplash.com/photo-1483982258113-b72862e6cff6?q=80&w=3456&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    "https://images.unsplash.com/photo-1482189349482-3defd547e0e9?q=80&w=2848&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    "https://images.unsplash.com/photo-1720766595377-b413ce3a6478?q=80&w=1886&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    "https://images.unsplash.com/photo-1483982258113-b72862e6cff6?q=80&w=3456&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    "https://images.unsplash.com/photo-1482189349482-3defd547e0e9?q=80&w=2848&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+const images: StaticImageData[] = [
+    t1,
+    t2,
+    t3,
+    t4,
+    t5,
+    t6
 ];
 
 interface ImageCardProps {
