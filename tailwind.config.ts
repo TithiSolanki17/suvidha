@@ -1,8 +1,10 @@
+// Import necessary types and modules
 import type { Config } from "tailwindcss";
 const defaultTheme = require("tailwindcss/defaultTheme");
 const colors = require("tailwindcss/colors");
 const { default: flattenColorPalette } = require("tailwindcss/lib/util/flattenColorPalette");
 
+// Custom function to add CSS variables for colors
 const addVariablesForColors = ({ addBase, theme }: any) => {
   let allColors = flattenColorPalette(theme("colors"));
   let newVars = Object.fromEntries(
@@ -14,13 +16,14 @@ const addVariablesForColors = ({ addBase, theme }: any) => {
   });
 };
 
+// Tailwind CSS configuration
 const config: Config = {
   content: [
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
-  darkMode: 'class',
+  darkMode: 'class', // Enable dark mode based on class
   theme: {
     extend: {
       backgroundImage: {
@@ -58,10 +61,8 @@ const config: Config = {
     },
   },
   plugins: [
-    addVariablesForColors
+    addVariablesForColors // Register the custom function as a plugin
   ],
 };
 
 export default config;
-
-
