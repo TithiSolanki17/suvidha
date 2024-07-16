@@ -1,7 +1,7 @@
 import Image from 'next/image';
-import React from 'react';
+// import React from 'react';
 import '../styles/styles.css';
-import bgimg1 from '../gallery/assets/workshop.png';
+import bgimg1 from '../gallery/assets/workshop.jpg';
 import bgimg2 from '../gallery/assets/book.png';
 import bgimg3 from '../gallery/assets/online.png';
 import bgimg4 from '../gallery/assets/food.png';

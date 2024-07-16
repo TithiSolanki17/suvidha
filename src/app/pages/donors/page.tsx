@@ -1,7 +1,7 @@
 // 'use client';
 
 // import '../donor/stylesheet/style.css';
-import React from "react";
+import React, { useMemo, useState } from "react";
 import { Table, TableHeader, TableColumn, TableBody, TableRow, TableCell } from "@nextui-org/react";
 import { Pagination } from "@nextui-org/pagination";
 import { users } from "../donors/data/data";
@@ -9,12 +9,12 @@ import ImagesSliderDemoAbout from "../../../components/imagedonor";
 import { FadeTextDemo } from "@/components/textdonor";
 
 export default function Page() {
-  const [page, setPage] = React.useState(1);
+  const [page, setPage] = useState(1);
   const rowsPerPage = 10;
 
   const pages = Math.ceil(users.length / rowsPerPage);
 
-  const items = React.useMemo(() => {
+  const items = useMemo(() => {
     const start = (page - 1) * rowsPerPage;
     const end = start + rowsPerPage;
 

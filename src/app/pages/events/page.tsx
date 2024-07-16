@@ -1,4 +1,4 @@
-import React from 'react';
+// import React from 'react';
 import ImagesSliderDemoGallery from '@/components/imageevents';
 import CardHoverEffectDemo from '@/components/card';
 import{ DirectionAwareHoverDemo} from '@/components/eventspage_pic';
