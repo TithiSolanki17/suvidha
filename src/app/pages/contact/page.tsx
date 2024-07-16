@@ -1,11 +1,10 @@
+import React from 'react';
+import ForContactUs from '../../../components/contact_page';
 
-// 
 export default function Home() {
-    return (
-      <main className="flex min-h-screen flex-col items-center justify-between p-24 bg-white" style={{ color: 'black' }}>
-       contact us
-      </main>
-    );
-  }
-  
-  
+  return (
+    <main >
+      <ForContactUs />
+    </main>
+  );
+}

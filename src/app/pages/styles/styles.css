@@ -2,33 +2,37 @@
 @tailwind components;
 @tailwind utilities;
 
-button{
+button {
   padding: 4px 4px 4px 4px;
   background-color: gray;
 }
+
 @media screen and (min-width: 1120px) {
   :root {
     --h2-font-size: 1.5rem;
-    --small-font-size: .875rem;
+    --small-font-size: 0.875rem;
   }
 }
+
 * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
 }
-Image {
+
+img {
   display: block;
   max-width: 100%;
-  height: auto;
+  height: fit-content;
 }
+
 .container {
   display: grid;
   place-items: center;
   margin-inline: 1.5rem;
-  padding-block: 5rem;
-  margin: 2rem;
-
+  margin: auto;
+  padding-top: 16px;
+  padding: auto;
 }
 
 .card__container {
@@ -39,10 +43,13 @@ Image {
 .card__article {
   position: relative;
   overflow: hidden;
+  border-radius: 1.5rem;
 }
 
 .card__img {
-  width: 328px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
   border-radius: 1.5rem;
 }
 
@@ -50,7 +57,7 @@ Image {
   width: 280px;
   background-color: var(--container-color);
   padding: 1.5rem 2rem;
-  box-shadow: 0 8px 24px hsla(0, 0%, 0%, .15);
+  box-shadow: 0 8px 24px hsla(0, 0%, 0%, 0.15);
   border-radius: 1rem;
   position: absolute;
   bottom: -9rem;
@@ -59,21 +66,23 @@ Image {
   margin-inline: auto;
   opacity: 0;
   transition: opacity 1s 1s;
-  color: bisque;
-  background-color: gray;
+  color: white;
+  background-color: slategray;
 }
 
-.card__description {
+/* .card__description {
   display: block;
   font-size: var(--small-font-size);
-  margin-bottom: .25rem;
-}
+  margin-bottom: 0.25rem;
+  color: white;
+} */
 
 .card__title {
-  font-size: var(--h2-font-size);
-  font-weight: 500;
+  /* font-size: var(--h2-font-size); */
+  font-size: xx-large;
+  font-weight: 700;
   color: var(--title-color);
-  margin-bottom: .75rem;
+  margin-bottom: 0.75rem;
 }
 
 .card__button {
@@ -87,11 +96,10 @@ Image {
   text-decoration: underline;
 }
 
-/* Naming animations in hover */
 .card__article:hover .card__data {
   animation: show-data 1s forwards;
   opacity: 1;
-  transition: opacity .3s;
+  transition: opacity 0.3s;
 }
 
 .card__article:hover {
@@ -105,6 +113,7 @@ Image {
 .card__article:not(:hover) .card__data {
   animation: remove-data 1s forwards;
 }
+
 .flex.w-full.justify-center {
   display: flex;
   justify-content: center;
@@ -140,7 +149,6 @@ Image {
   cursor: not-allowed;
 }
 
-/* Smooth slide animation */
 .Pagination button {
   animation: slide 0.5s ease-in-out;
 }
@@ -155,7 +163,7 @@ Image {
     transform: translateX(0);
   }
 }
-/* Card animation */
+
 @keyframes show-data {
   50% {
     transform: translateY(-10rem);
@@ -179,7 +187,7 @@ Image {
     transform: translateY(-10rem);
   }
   100% {
-    transform: translateY(.5rem);
+    transform: translateY(0.5rem);
   }
 }
 
@@ -193,7 +201,6 @@ Image {
   }
 }
 
-/*=============== BREAKPOINTS ===============*/
 /* For small devices */
 @media screen and (max-width: 340px) {
   .container {
@@ -223,9 +230,13 @@ Image {
   .card__container {
     grid-template-columns: repeat(3, 1fr);
   }
+
   .card__img {
     width: 348px;
+    height: 348px;
+    object-fit: cover;
   }
+
   .card__data {
     width: 316px;
     padding-inline: 2.5rem;

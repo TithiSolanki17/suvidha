@@ -22,25 +22,18 @@ function Navbar({ className }: { className?: string }) {
            </MenuItem>
            </Link>
            <Link href="/pages/about">
-           <MenuItem setActive={setActive} active={active} item="About us">
-           <div className="flex flex-col space-y-4 text-sm">
-<<<<<<< HEAD
+            <MenuItem setActive={setActive} active={active} item="About us">
+            <div className="flex flex-col space-y-4 text-sm">
              <HoveredLink href="/pages/about#mission">Mission</HoveredLink>
              <HoveredLink href="/pages/about#vision">Vision</HoveredLink>
              <HoveredLink href="/pages/about#testimonials">Testimonials</HoveredLink>
-=======
-             <HoveredLink href="/pages/about/mission">Mission</HoveredLink>
-             <HoveredLink href="/pages/gallery#photo6">Vision</HoveredLink>
-             <HoveredLink href="/pages/gallery#photo6">Testimonials</HoveredLink>
-             
->>>>>>> cd6c0e8acd609fdd8f155c449312a448bee0d2a6
            </div>
            </MenuItem>
            </Link>
            <Link href="/pages/donors">
            <MenuItem setActive={setActive} active={active} item="Our Donors">
            <div className="flex flex-col space-y-4 text-sm">
-             <HoveredLink href="/pages/donor">"Every contribution brings us closer to our goals"</HoveredLink>
+             <HoveredLink href="/pages/donor">&quot;Every contribution brings us closer to our goals&quot;</HoveredLink>
            </div>
            </MenuItem>
            </Link>
@@ -48,7 +41,7 @@ function Navbar({ className }: { className?: string }) {
            <MenuItem setActive={setActive} active={active} item="Gallery">
            <div className="flex flex-col space-y-4 text-sm">
              <HoveredLink href="/pages/gallery#photo1">Photo1</HoveredLink>
-             <HoveredLink href="/pages/gallery#photo2" >Photo2</HoveredLink>
+             <HoveredLink href="/pages/gallery#photo2">Photo2</HoveredLink>
              <HoveredLink href="/pages/gallery#photo3">Photo3</HoveredLink>
              <HoveredLink href="/pages/gallery#photo4">Photo4</HoveredLink>
              <HoveredLink href="/pages/gallery#photo5">Photo5</HoveredLink>
@@ -56,6 +49,7 @@ function Navbar({ className }: { className?: string }) {
            </div>
            </MenuItem>
            </Link>
+           <Link href="/pages/events">
            <MenuItem setActive={setActive} active={active} item="Events">
            <div className="flex flex-col space-y-4 text-sm">
              <HoveredLink href="/pages/gallery#photo1">Event1</HoveredLink>
@@ -66,8 +60,9 @@ function Navbar({ className }: { className?: string }) {
              <HoveredLink href="/pages/gallery#photo6">Event6</HoveredLink>
            </div>
            </MenuItem>
-           <Link href="/pages/about">
-           <MenuItem setActive={setActive} active={active} item="Contact US">
+           </Link>
+           <Link href="/pages/contact">
+           <MenuItem setActive={setActive} active={active} item="Contact Us">
              <div className="flex flex-col space-y-4 text-sm">
                  <HoveredLink href="">Email</HoveredLink>
                  <HoveredLink href="">Phone</HoveredLink>
@@ -124,10 +119,10 @@ function Navbar({ className }: { className?: string }) {
           <div className='px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-yellow-300'>
               <a href="/" className='text-neutral-600 block hover:text-black rounded-lg p-2'>Home</a>
               <a href="/pages/about" className='text-neutral-600 block hover:text-black rounded-lg p-2'>About</a>
-              <a href="/pages/donors" className='text-neutral-600 block hover:text-black rounded-lg p-2'>Out Donors</a>
+              <a href="/pages/donors" className='text-neutral-600 block hover:text-black rounded-lg p-2'>Our Donors</a>
               <a href="/pages/gallery" className='text-neutral-600 block hover:text-black rounded-lg p-2'>Gallery</a>
               <a href="/pages/events" className='text-neutral-600 block hover:text-black rounded-lg p-2'>Events</a>
-              <a href="/pages/contact" className='text-neutral-600 block hover:text-black rounded-lg p-2'>Contact US</a>
+              <a href="/pages/contact" className='text-neutral-600 block hover:text-black rounded-lg p-2'>Contact Us</a>
           </div>
         </div>
       )}

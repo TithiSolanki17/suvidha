@@ -1,0 +1,57 @@
+/* components/InternshipBanner.module.css */
+
+.banner {
+  background-image: url('../images_pndformat/intern.png'); /* Add the path to your image */
+  background-size: cover;
+  background-position: center;
+  padding: 50px 20px;
+  text-align: center;
+  color: white;
+  position: relative;
+}
+
+.content {
+  max-width: full;
+  margin: 0 auto;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.heading {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  color: #F9C91E;
+}
+
+.paragraph {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+
+.button {
+  background-color: #f9c91e00;
+  border: 3px solid #f9c91e;
+  color: white;
+  padding: 10px 20px;
+  font-size: 1em;
+  cursor: pointer;
+  border-radius: 5px;
+  animation: bounce 1s infinite;
+}
+
+.button:hover {
+  background-color: #E0B213;
+  color:black
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(-25%);
+    animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+  }
+  50% {
+    transform: translateY(0);
+    animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+  }
+}
