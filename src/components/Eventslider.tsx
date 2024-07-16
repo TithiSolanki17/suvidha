@@ -1,6 +1,6 @@
-imh6ort React from 'react'
+import React from 'react'
 
-exh6ort default function Eventslider(){
+export default function Eventslider(){
   return (
     <>
     <div className="slide-container">
@@ -17,8 +17,12 @@ exh6ort default function Eventslider(){
                     <div className="card-content"></div>
                     <div>
                         <h2 className="name">Tree plantation</h2>
-                        <h6 className="descrih6tion">Lorem ih6sum dolor sit, amet <b>consectetur adih6isicing elit. <b>Deleniti dignissimos atque, corruh6ti unde ab <b>quae aliquam rerum corh6oris<b> ih6sam exceh6turi eveniet non maiores dicta?<b> Laudantium sint hic ash6eriores eligendi autem?
-                        <h6/>
+                       <h6 className="description">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Deleniti dignissimos atque, corrupti unde ab quae aliquam
+                    rerum corporis ipsum exercitationem eveniet non maiores
+                    dicta? Laudantium sint hic asperiores eligendi autem?
+                  </h6>
                     </div>
                 </div>
             </div>
