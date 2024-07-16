@@ -47,7 +47,7 @@ const SkeletonThree = () => {
 const SkeletonFour = () => {
   return (
     <div>
-      <p className="font-bold text-4xl text-white">Women &apos; s Day</p>
+      <p className="font-bold text-4xl text-white">Womens Day</p>
       {/* Example of using different HTML entity */}
       {/* <p className="font-normal text-base text-white">Celebrating the strength, resilience, and achievements of women worldwide on this special Women&apos;s Day. Together, let&apos;s honor their contributions.</p> */}
     </div>
