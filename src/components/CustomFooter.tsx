@@ -22,19 +22,19 @@ const CustomFooter = () => {
         <div className="mb-6 w-full md:w-auto text-center">
           <h4 className="text-lg font-bold mb-2">Social</h4>
           <div className="flex flex-col items-center space-y-1">
-            <a href="#" className="hover:underline"><i className="fab fa-linkedin"></i> Linkedin</a>
-            <a href="#" className="hover:underline"><i className="fab fa-twitter"></i> Twitter</a>
-            <a href="#" className="hover:underline"><i className="fab fa-facebook"></i> Facebook</a>
-            <a href="#" className="hover:underline"><i className="fab fa-instagram"></i> Instagram</a>
+            <a href="https://www.linkedin.com/company/suvidha-foundation/mycompany/" className="hover:underline" target="_blank" rel="noopener noreferrer"><i className="fab fa-linkedin"></i> Linkedin</a>
+            <a href="#" className="hover:underline" target="_blank" rel="noopener noreferrer"><i className="fab fa-twitter"></i> Twitter</a>
+            <a href="https://www.linkedin.com/company/suvidha-foundation/mycompany/" className="hover:underline" target="_blank" rel="noopener noreferrer"><i className="fab fa-facebook"></i> Facebook</a>
+            <a href="https://www.instagram.com/suvidha_mahila_mandal?igshid=YmMyMTA2M2Y%3D" className="hover:underline" target="_blank" rel="noopener noreferrer"><i className="fab fa-instagram"></i> Instagram</a>
           </div>
         </div>
         <div className="mb-6 w-full md:w-auto text-center">
           <h4 className="text-lg font-bold mb-2">Quick Links</h4>
           <div className="flex flex-col items-center space-y-1">
-            <a href="#" className="hover:underline">Home</a>
-            <a href="#" className="hover:underline">About</a>
-            <a href="#" className="hover:underline">Blogs</a>
-            <a href="#" className="hover:underline">Contact</a>
+            <a href="/" className="hover:underline" target="_blank" rel="noopener noreferrer">Home</a>
+            <a href="/pages/about" className="hover:underline" target="_blank" rel="noopener noreferrer">About</a>
+            <a href="/" className="hover:underline" target="_blank" rel="noopener noreferrer">Blogs</a>
+            <a href="/pages/contact" className="hover:underline" target="_blank" rel="noopener noreferrer">Contact</a>
           </div>
         </div>
         <div className="w-full md:w-auto text-center">
@@ -62,4 +62,3 @@ const CustomFooter = () => {
 };
 
 export default CustomFooter;
-

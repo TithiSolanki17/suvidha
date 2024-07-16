@@ -39,17 +39,12 @@ const ImageCard: React.FC<ImageCardProps> = ({ src }) => {
     set({ transform: 'rotate(0deg)' });
   };
 
-  const openLink = () => {
-    window.location.href = "/contact";
-  };
-
   return (
     <animated.div
       style={props}
       onMouseMove={handleMouseMove}
       onMouseLeave={handleMouseLeave}
       className="relative w-64 h-80 m-2 overflow-hidden rounded-xl shadow-lg cursor-pointer"
-      onClick={openLink}
     >
       <Image src={src} layout="fill" objectFit="cover" alt="Gallery Image" />
     </animated.div>
