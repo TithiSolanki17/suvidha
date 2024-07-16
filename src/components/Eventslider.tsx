@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 
 export default function EventSlider() {
   return (
@@ -11,7 +12,12 @@ export default function EventSlider() {
                 <span className="overlay"></span>
 
                 <div className="card-image">
-                  <img src="image-url" alt="Image Alt Text" />
+                  <Image
+                    src="/image-url"
+                    alt="Image Alt Text"
+                    width={300} // Set your desired width
+                    height={200} // Set your desired height
+                  />
                 </div>
               </div>
               <div className="card-content">
