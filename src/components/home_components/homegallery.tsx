@@ -1,5 +1,4 @@
 // components/HomeGallery.tsx
-// components/HomeGallery.tsx
 'use client';
 import React, { useState } from 'react';
 import { useSpring, animated } from '@react-spring/web';
@@ -23,7 +22,7 @@ const images: StaticImageData[] = [
 ];
 
 interface ImageCardProps {
-  src: string;
+  src: StaticImageData;
 }
 
 const ImageCard: React.FC<ImageCardProps> = ({ src }) => {
@@ -41,7 +40,7 @@ const ImageCard: React.FC<ImageCardProps> = ({ src }) => {
   };
 
   const openLink = () => {
-    window.location.href = "./pages/contact";
+    window.location.href = "/contact";
   };
 
   return (
@@ -75,6 +74,7 @@ const HomeGallery: React.FC = () => {
         <button
           onClick={handlePrev}
           className="absolute left-4 bg-slate-900 text-white p-2 rounded-full shadow-lg z-10"
+          aria-label="Previous"
         >
           Prev
         </button>
@@ -84,6 +84,7 @@ const HomeGallery: React.FC = () => {
         <button
           onClick={handleNext}
           className="absolute right-4 bg-slate-900 text-white p-2 rounded-full shadow-lg z-10"
+          aria-label="Next"
         >
           Next
         </button>
@@ -93,6 +94,7 @@ const HomeGallery: React.FC = () => {
         <button
           onClick={handlePrev}
           className="absolute left-4 bg-slate-900 text-white p-2 rounded-full shadow-lg z-10"
+          aria-label="Previous"
         >
           Prev
         </button>
@@ -100,6 +102,7 @@ const HomeGallery: React.FC = () => {
         <button
           onClick={handleNext}
           className="absolute right-4 bg-slate-900 text-white p-2 rounded-full shadow-lg z-10"
+          aria-label="Next"
         >
           Next
         </button>
@@ -110,5 +113,3 @@ const HomeGallery: React.FC = () => {
 };
 
 export default HomeGallery;
-
-
