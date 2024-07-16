@@ -33,7 +33,7 @@ function Navbar({ className }: { className?: string }) {
            <Link href="/pages/donors">
            <MenuItem setActive={setActive} active={active} item="Our Donors">
            <div className="flex flex-col space-y-4 text-sm">
-             <HoveredLink href="/pages/donor">"Every contribution brings us closer to our goals"</HoveredLink>
+             <HoveredLink href="/pages/donor">&quot;Every contribution brings us closer to our goals&quot;</HoveredLink>
            </div>
            </MenuItem>
            </Link>
