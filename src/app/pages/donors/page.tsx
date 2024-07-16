@@ -8,7 +8,7 @@ import { users } from "../donors/data/data";
 import ImagesSliderDemoAbout from "../../../components/imagedonor";
 import { FadeTextDemo } from "@/components/textdonor";
 
-export default function page() {
+export default function Page() {
   const [page, setPage] = React.useState(1);
   const rowsPerPage = 10;
 
