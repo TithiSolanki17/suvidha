@@ -1,4 +1,4 @@
-'use client';
+// 'use client';
 
 // import '../donor/stylesheet/style.css';
 import React from "react";
